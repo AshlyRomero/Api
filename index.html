@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YesNo API - Preguntas Aleatorias</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/config.css">
+</head>
+<body>
+    <!-- Header con el título de la API en la parte superior -->
+    <header>
+        <h1>YesNo API - Preguntas Aleatorias</h1>
+    </header>
+
+    <div class="container">
+        <h2>¿Sí, No?</h2>
+        <p>Haz una pregunta y obtén una respuesta aleatoria:</p>
+        <input type="text" id="question-input" placeholder="Escribe tu pregunta">
+        <button id="get-answer">Obtener Respuesta</button>
+        
+        <div id="filter-section">
+            <label for="filter">Filtrar Respuesta:</label>
+            <select id="filter">
+                <option value="all">Todos</option>
+                <option value="yes">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div id="result">
+            <img id="result-img" src="" alt="Respuesta">
+            <p id="answer"></p>
+        </div>
+
+        <div id="api-info">
+            <h2>Información de la API:</h2>
+            <div id="api-details">
+                <p><strong>Respuesta:</strong> <span id="api-answer"></span></p>
+                <p><strong>Imagen URL:</strong> <a id="api-image-url" href="" target="_blank"></a></p>
+                <p><strong>Forzado:</strong> <span id="api-forced"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
